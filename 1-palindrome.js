@@ -8,7 +8,7 @@
 // console.log(+"5");
 
 let ispalindrome = function(x){
-  return x === +x.toString().split("").reverse().join("");
+  return (x<0) ? false : x === +x.toString().split("").reverse().join("");
 }
-const ans = ispalindrome(151);
+const ans = ispalindrome(450);
 console.log(ans);
